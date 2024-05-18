@@ -33,6 +33,9 @@
                 <li class="nav-item">
                     <span class="nav-link navigation text-primary" id="item-btn">Items</span>
                 </li>
+                <li class="nav-item">
+                    <span class="nav-link navigation text-primary" id="customer-btn">Customer</span>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle navigation text-primary" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,7 +43,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><span class="dropdown-item nav-link navigation text-primary"
-                                id="customer-btn">Customers</span></li>
+                                id="customer-btn">Delivery</span></li>
                         <li><a class="dropdown-item nav-link navigation text-primary" href="#">Other</a></li>
                     </ul>
                 </li>
@@ -445,7 +448,7 @@
                     <caption>All Customers</caption>
                     <thead class="text-success rounded-3" style="background-color: #2d3d2d">
 
-                        <tr class="text-success">
+                        <tr id="trr" class="text-success" >
                             <th>CustomerID</th>
                             <th>CustomerName</th>
                             <th>CustomerAddress</th>

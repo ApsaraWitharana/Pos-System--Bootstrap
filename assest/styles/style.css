@@ -95,6 +95,18 @@ caption{
     font-size: 25px;
     color: black;
 }
+
+tr{
+    background-color: #065d37;
+    color: white;
+}
+
+#trr{
+    background-color: #065d37;
+        color: white;
+}
+
+
 .errorMessageId, .errorMessageName, .errorMessageAddress, .errorMessageSalary,.errorMessageItemId,.errorMessageItemName,.errorMessageItemPrice,.errorMessageItemQty,.errorOrderQty,.errorQty{
     color: red;
     display: none;
