@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const barChart = new Chart(barCtx, {
         type: 'bar',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['Nadu', 'Sudukakulu', 'Samba', 'Punnisamba', 'Keerisamba', 'Rathukakulu'],
             datasets: [{
                 label: 'Votes',
                 data: [12, 19, 3, 5, 2, 3],
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const pieChart = new Chart(pieCtx, {
         type: 'pie',
         data: {
-            labels: ['Red', 'Blue', 'Yellow'],
+            labels: ['Rathukakulu', 'Punnisamba', 'Keerisamba'],
             datasets: [{
                 label: 'Population',
                 data: [300, 50, 100],

@@ -156,6 +156,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+    border: 2px solid white;
+    border-radius: 12px;
 }
 
 .chart-container {
@@ -165,3 +167,4 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+

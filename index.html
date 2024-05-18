@@ -28,15 +28,18 @@
                 <li class="nav-item ">
                     <span class="nav-link navigation active text-primary" id="home-btn">Home</span>
                 </li>
-                <li class="nav-item ">
-                    <span class="nav-link navigation text-primary" id="order-btn">Orders</span>
-                </li>
-                <li class="nav-item">
-                    <span class="nav-link navigation text-primary" id="item-btn">Items</span>
-                </li>
                 <li class="nav-item">
                     <span class="nav-link navigation text-primary" id="customer-btn">Customer</span>
                 </li>
+
+                <li class="nav-item">
+                    <span class="nav-link navigation text-primary" id="item-btn">Items</span>
+                </li>
+
+                <li class="nav-item ">
+                    <span class="nav-link navigation text-primary" id="order-btn">Orders</span>
+                </li>
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle navigation text-primary" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -90,12 +93,17 @@
         </div> -->
         <div class="dashboard">
             <div class="chart-container">
+                <h4>Yearly Product Sale</h4>
                 <canvas id="lineChart"></canvas>
             </div>
+           
             <div class="chart-container">
+                <h4>Monthly Product Sale</h4>
                 <canvas id="barChart"></canvas>
             </div>
+           
             <div class="chart-container">
+                <h4>Daily Product Sale</h4>
                 <canvas id="pieChart"></canvas>
             </div>
         </div>
