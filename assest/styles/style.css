@@ -1,3 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    /* --green:#008000; */
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+
+
+}
+
 body{
     background-color: #E9ECEE;
 }
@@ -97,17 +111,57 @@ caption{
 }
 
 tr{
-    background-color: #065d37;
+    background-color: #11171c;
     color: white;
 }
 
 #trr{
-    background-color: #065d37;
+    background-color: #101315;
         color: white;
 }
 
+a{
+    color: blue;
+}
+
+.navbar-nav .nav-item{
+    color: #54a7da;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-item:hover{
+    color: black;
+   
+
+}
 
 .errorMessageId, .errorMessageName, .errorMessageAddress, .errorMessageSalary,.errorMessageItemId,.errorMessageItemName,.errorMessageItemPrice,.errorMessageItemQty,.errorOrderQty,.errorQty{
     color: red;
     display: none;
+}
+
+
+
+/* ===========================barchat================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.chart-container {
+    width: 30%;
+    margin: 20px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
