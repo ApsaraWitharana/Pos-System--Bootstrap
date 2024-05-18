@@ -1,0 +1,74 @@
+body{
+    background-color: #E9ECEE;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Poppins';
+}
+.navtop {
+    background-color: #F9F8FB;
+    border-bottom: 3px solid black;
+    box-shadow: 0 2px 0px #363636;
+}
+
+.nav-item{
+    font-weight: 300;
+    font-family: 'Poppins';
+}
+.navigation:hover{
+    color: #00ff04 !important;
+    cursor: pointer;
+}
+#homediv{
+    position: fixed;
+
+    padding: 20px;
+    z-index: 100;
+}
+.myCard{
+
+    width: 100%;
+    height: 250px;
+    background: #295635;
+    border-radius: 10px;
+
+}
+.myCard>i{
+    color: #dfc2c4;
+    font-size: 5em;
+    text-align: center;
+    display: block;
+    padding-top: 35px;
+    opacity:0.6;
+}
+
+.myCard>h1{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-family: Ubuntu;
+    padding-top: 20px;
+
+}
+
+.myCard>h2{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-family: Ubuntu;
+    padding-top: 2px;
+}
+.manageCustomer{
+    background-color: #49b249;
+}
+.card-header{
+    background-color: #49b249;
+}
+#addcustomer{
+    background-color: #067c8d !important;
+}
+.errorMessageId, .errorMessageName, .errorMessageAddress, .errorMessageSalary,.errorMessageItemId,.errorMessageItemName,.errorMessageItemPrice,.errorMessageItemQty,.errorOrderQty,.errorQty{
+    color: red;
+    display: none;
+}
