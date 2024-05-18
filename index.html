@@ -98,7 +98,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label fw-bold">Order Id :</label>
-                                    <input class="form-control" id="orderId" placeholder="D001" disabled>
+                                    <input class="form-control" id="orderId" placeholder="ORD001" disabled>
                                 </div>
 
                                 <div class="col-md-6 mb-3">
@@ -108,24 +108,24 @@
 
                                 <div class="col-md-6 mt-3 mb-3">
                                     <label class="form-label fw-bold">Customer ID :</label>
-                                    <select class="form-select" name="customer" id="cusIdOption">
+                                    <select class="form-select" name="customer" placeholder="C00-001" id="cusIdOption">
                                         <option>C00-000</option>
                                     </select>
                                 </div>
 
                                 <div class="col-md-6 mt-3 mb-3">
                                     <label class="form-label fw-bold">Customer name:</label>
-                                    <input class="form-control" id="orderCusName" placeholder="Chamika" disabled>
+                                    <input class="form-control" id="orderCusName" placeholder="Sachini" disabled>
                                 </div>
 
                                 <div class="col-md-12 mt-3 mb-3">
                                     <label class="form-label fw-bold">Salary :</label>
-                                    <input class="form-control" id="orderCusSalary" placeholder="10000.00" disabled>
+                                    <input class="form-control" id="orderCusSalary" placeholder="20000.00" disabled>
                                 </div>
 
                                 <div class="col-md-12 mt-3 mb-3">
                                     <label class="form-label fw-bold">Address :</label>
-                                    <input class="form-control" id="orderCusAddress" placeholder="Panadura" disabled>
+                                    <input class="form-control" id="orderCusAddress" placeholder="Matara" disabled>
                                 </div>
                             </div>
                         </form>
@@ -149,7 +149,7 @@
 
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label fw-bold" for="orderFormItemName">Item name:</label>
-                                    <input class="form-control" id="orderFormItemName" placeholder="Keerisamba"
+                                    <input class="form-control" id="orderFormItemName" placeholder="Punnisamba"
                                         disabled>
                                 </div>
                             </div>
@@ -158,19 +158,19 @@
 
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label fw-bold" for="orderFormPrice">Price :</label>
-                                    <input class="form-control" id="orderFormPrice" placeholder="525.00" disabled>
+                                    <input class="form-control" id="orderFormPrice" placeholder="300.00" disabled>
                                 </div>
 
                                 <div class="col-md-6 mb-3">
                                     <label class="form-label fw-bold" for="orderQty">QtyOnHand :</label>
-                                    <input class="form-control" id="orderFormQtyOnHand" placeholder="200" disabled>
+                                    <input class="form-control" id="orderFormQtyOnHand" placeholder="20" disabled>
                                 </div>
 
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-12 mb-3 fw-bold">
                                     <label class="form-label">Order Quantity :</label>
-                                    <input class="form-control" placeholder="2" id="orderQty">
+                                    <input class="form-control" placeholder="4" id="orderQty">
                                     <span class="errorOrderQty">Please enter a amount lower than: <span
                                             id="orderQtyValue"></span></span>
                                     <span class="errorQty">item Qty is required field: Only Numbers</span>
@@ -264,7 +264,7 @@
                         </div>
                         <div class="card-body">
                             <div class="mb-3">
-                                <input class="form-control" placeholder="Input Name/Code Here" type="text">
+                                <input class="form-control" placeholder="Input Name/Item Code Here" type="text">
                             </div>
                             <div class=" justify-content-between">
                                 <button type="button" class="btn btn-success text-white">Search</button>
@@ -293,7 +293,7 @@
                                         <form>
                                             <div class="form-group">
                                                 <label for="IID" class="fw-bold">Item Code:</label>
-                                                <input type="text" class="form-control" id="IID" placeholder="I001"
+                                                <input type="text" class="form-control" id="IID" placeholder="I00-001"
                                                     onkeyup="checkFieldItemId()">
                                                 <span class="errorMessageItemId">item id is required field: Pattern
                                                     I00-000 </span>
@@ -301,20 +301,20 @@
                                             <div class="form-group mt-2">
                                                 <label for="IName" class="fw-bold">Item Name:</label>
                                                 <input type="text" class="form-control" id="IName"
-                                                    placeholder="keerisamba" onkeyup="checkFieldItemName()">
+                                                    placeholder="Punnisamab" onkeyup="checkFieldItemName()">
                                                 <span class="errorMessageItemName">item name is required field: Minimum
                                                     5,Max 20, Space Allowed </span>
                                             </div>
                                             <div class="form-group mt-2">
                                                 <label for="IPrice" class="fw-bold">Item Price:</label>
                                                 <input type="text" class="form-control" id="IPrice"
-                                                    placeholder="1000.00" onkeyup="checkFieldItemPrice()">
+                                                    placeholder="3000.00" onkeyup="checkFieldItemPrice()">
                                                 <span class="errorMessageItemPrice">item price is required field:
                                                     Pattern 100.00 or 100 </span>
                                             </div>
                                             <div class="form-group mt-2">
                                                 <label for="Iquentity" class="fw-bold">Item Quantity:</label>
-                                                <input type="text" class="form-control" id="Iquentity" placeholder="50"
+                                                <input type="text" class="form-control" id="Iquentity" placeholder="10"
                                                     onkeyup="checkFieldItemQty()">
                                                 <span class="errorMessageItemQty">item Qty is required field: Only
                                                     Numbers </span>
@@ -398,28 +398,28 @@
                                             <div class="form-group" id="cusidDiv">
                                                 <label for="customerID" class="fw-bold">Customer ID:</label>
                                                 <input type="text" class="form-control" id="customerID"
-                                                    placeholder="C001" onkeyup="checkIdField()">
+                                                    placeholder="C00-001" onkeyup="checkIdField()">
                                                 <span class="errorMessageId">cus id is required field: Pattern C00-000
                                                 </span>
                                             </div>
                                             <div class="form-group mt-2">
                                                 <label for="customerName" class="fw-bold">Customer Name:</label>
                                                 <input type="text" class="form-control" id="customerName"
-                                                    placeholder="Chamika" onkeyup="checkNameField()">
+                                                    placeholder="Sachini" onkeyup="checkNameField()">
                                                 <span class="errorMessageName">cus name is required field: Minimum 5,Max
                                                     20, Space Allowed </span>
                                             </div>
                                             <div class="form-group mt-2">
                                                 <label for="customerAddress" class="fw-bold">Customer Address:</label>
                                                 <input type="text" class="form-control" id="customerAddress"
-                                                    placeholder="Panadura" onkeyup="checkFieldAddress()">
+                                                    placeholder="Matara" onkeyup="checkFieldAddress()">
                                                 <span class="errorMessageAddress">cus Address is required field: Minimum
                                                     7 </span>
                                             </div>
                                             <div class="form-group mt-2">
                                                 <label for="customerSalary" class="fw-bold">Customer Salary:</label>
                                                 <input type="text" class="form-control" id="customerSalary"
-                                                    placeholder="1000.00" onkeyup="checkFieldSalary()">
+                                                    placeholder="2000.00" onkeyup="checkFieldSalary()">
                                                 <span class="errorMessageSalary">cus Salary is required field: Pattern
                                                     100.00 or 100 </span>
                                             </div>
