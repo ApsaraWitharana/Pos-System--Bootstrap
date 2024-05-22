@@ -332,9 +332,18 @@
                                             <div class="form-group mt-2">
                                                 <label for="IPrice" class="fw-bold">Item Price:</label>
                                                 <input type="text" class="form-control" id="IPrice"
-                                                    placeholder="3000.00" onkeyup="checkFieldItemPrice()">
+                                                    placeholder="300.00" onkeyup="checkFieldItemPrice()">
                                                 <span class="errorMessageItemPrice">item price is required field:
                                                     Pattern 100.00 or 100 </span>
+                                            </div>
+                                            <div class="col-md-6 mt-3 mb-3">
+                                                <label class="form-label fw-bold">Status :</label>
+                                                <select class="form-select" name="customer" placeholder="5kg" id="cusIdOption">
+                                                    <option>5kg</option>
+                                                    <option>10kg</option>
+                                                    <option>25kg</option>
+                                                    <option>50kg</option>
+                                                </select>
                                             </div>
                                             <div class="form-group mt-2">
                                                 <label for="Iquentity" class="fw-bold">Item Quantity:</label>
@@ -524,6 +533,7 @@
                                                 <button type="button" class="btn btn-warning update_btn">Update</button>
                                                 <button type="button"
                                                     class="btn btn-info mx-2 delete_btn">Delete</button>
+                                               
                                             </div>
                                         </form>
                                     </div>
@@ -547,6 +557,7 @@
                             <th>CustomerName</th>
                             <th>CustomerAddress</th>
                             <th>Salary</th>
+                            <!-- <th>Action</th> -->
                         </tr>
                     </thead>
                     <tbody id="customerTable">

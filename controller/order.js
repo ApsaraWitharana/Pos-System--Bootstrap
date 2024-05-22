@@ -13,7 +13,7 @@ let itemName;
 let itemPrice;
 let itemQty;
 let orderQty;
-
+// let orderId;
 var allTotal=0;
 
 $("#btnPurchase").on('click', () => {
@@ -45,6 +45,11 @@ function generateCurrentDate(){
     $("#orderDate").val(new Date().toISOString().slice(0, 10));
 }
 
+//  function generateOrderId() {
+//         const orderId = `ORD-${orderIdCounter.toString().padStart(4, '0')}`;
+//         orderIdCounter++;
+//         return orderId;
+//     }
 function loadAllCustomerId() {
     $('#cusIdOption').empty();
     for (let customerArElement of customer) {

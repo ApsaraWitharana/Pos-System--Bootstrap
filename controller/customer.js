@@ -68,10 +68,23 @@ $("#customerTable").on('dblclick','tr',function() {
 
 
 $(".delete_btn").on('click', () => {
+     alert("Customer Delete successfuly!!!")
     customer.splice(recordIndex, 1);
     loadTable();
     clearField();
 });
+
+//  function deleteCustomer(id, button, customers) {
+//                     if (confirm(`Are you sure you want to delete customer ${id}?`)) {
+//                         const index = customers.findIndex(customer => customer.id == id);
+//                         if (index !== -1) {
+//                             customers.splice(index, 1);
+//                             const row = button.parentNode.parentNode;
+//                             row.remove();
+//                         }
+//                     }
+//                 }
+
 
 function clearField(){
     $("#customerID").val('');
@@ -81,6 +94,7 @@ function clearField(){
 }
 
 $(".update_btn").on('click', () => {
+    alert("Customer update successfuly!!!")
     var customerID = $('#customerID').val();
     var customerName = $('#customerName').val();
     var customerAddress = $('#customerAddress').val();

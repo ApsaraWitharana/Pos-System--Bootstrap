@@ -222,8 +222,29 @@ body {
                font-size: 14px;
                color: var(--black2);
            }
-/* 
+
+           /* =============button================ */
+
+           .btn_addItem{
+            background-color: #131fcd;
+            border-radius: 12px;
+
+           }
            .btn_addItem:hover{
             color: green;
             background-color: green;
-           } */
+            font-size: 20px;
+           }
+
+           .btnPurchase{
+            background-color: #dfc2c4;
+           }
+           #btn{
+            background-color: green;
+           }
+
+           .card-header{
+            border-radius: 12px;
+           }
+
+          
