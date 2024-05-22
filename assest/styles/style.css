@@ -115,10 +115,10 @@ caption{
     color: white;
 }
 
-#trr{
+ #trr{
     background-color: #101315;
         color: white;
-} */
+} */ 
 
 a{
     color: blue;
@@ -249,5 +249,28 @@ body {
            .card-header{
             border-radius: 12px;
            }
+/* 
+           .text-success{
+            background-color: rgb(135, 163, 135);
+            border-radius: 12px;
+           } */
+
+           /* .trr th{
+            background-color: green;
+           }
+
+         .col .table-hover .text-success tr{
+            color: white;
+            background-color: green;
+         } */
+
+         tr:hover{
+            cursor: pointer;
+            color: white;
+            background-color: gray;
+            /* background-color: green; */
+         }
+
+           
 
           
