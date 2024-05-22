@@ -68,7 +68,7 @@ $("#customerTable").on('dblclick','tr',function() {
 
 
 $(".delete_btn").on('click', () => {
-     alert("Customer Delete successfuly!!!")
+     alert("Do you want to delete this customer??")
     customer.splice(recordIndex, 1);
     loadTable();
     clearField();

@@ -20,7 +20,7 @@ function loadTable(){
 
 $(".item_save_btn").on('click', () => {
 
-    let alertConfrim = confirm('Do you really want to add this item');
+    let alertConfrim = confirm('Do you  want to add this item');
     if (alertConfrim==true) {
 
         var itemId = $('#IID').val();
@@ -58,7 +58,7 @@ $("#ItemsTable").on('click', 'tr', function() {
     $("#Iquentity").val(qty);
 });
 $("#ItemsTable").on('dblclick','tr',function() {
-    let alertConfrimDelete = confirm('Do you  want to delete this item');
+    let alertConfrimDelete = confirm('Do you  want to delete this item??');
     if (alertConfrimDelete==true){
         let index = $(this).index();
         recordIndex = index;
@@ -67,9 +67,11 @@ $("#ItemsTable").on('dblclick','tr',function() {
 });
 
 $(".item_delete_btn").on('click', () => {
+     alert("Do You Want to Delete this item??")
     items.splice(recordIndex, 1);
     loadTable();
     clearField();
+  
 });
 
 function clearField(){
@@ -80,6 +82,7 @@ function clearField(){
 }
 
 $(".item_update_btn").on('click', () => {
+    alert("Update Item Successfully!!")
     var itemId = $('#IID').val();
     var itemName = $('#IName').val();
     var itemPrice = $('#IPrice').val();
