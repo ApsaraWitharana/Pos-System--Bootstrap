@@ -222,3 +222,8 @@ body {
                font-size: 14px;
                color: var(--black2);
            }
+/* 
+           .btn_addItem:hover{
+            color: green;
+            background-color: green;
+           } */

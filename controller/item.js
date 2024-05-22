@@ -58,7 +58,7 @@ $("#ItemsTable").on('click', 'tr', function() {
     $("#Iquentity").val(qty);
 });
 $("#ItemsTable").on('dblclick','tr',function() {
-    let alertConfrimDelete = confirm('Do you really want to delete this item');
+    let alertConfrimDelete = confirm('Do you  want to delete this item');
     if (alertConfrimDelete==true){
         let index = $(this).index();
         recordIndex = index;

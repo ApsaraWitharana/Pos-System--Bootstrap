@@ -58,7 +58,7 @@ $("#customerTable").on('click', 'tr', function() {
     $("#customerSalary").val(salary);
 });
 $("#customerTable").on('dblclick','tr',function() {
-    let alertConfrimDelete = confirm('Do you really want to delete this customer');
+    let alertConfrimDelete = confirm('Do you want to delete this customer');
     if (alertConfrimDelete==true) {
         let index = $(this).index();
         recordIndex = index;
