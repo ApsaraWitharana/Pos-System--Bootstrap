@@ -13,12 +13,12 @@ let itemName;
 let itemPrice;
 let itemQty;
 let orderQty;
-// let orderId;
+
 var allTotal=0;
 
 $("#btnPurchase").on('click', () => {
 
-    let alertConfrim = confirm('Do you  want to Purchase this item');
+    let alertConfrim = confirm('Do you really want to Purchase this item');
     if (alertConfrim==true) {
 
         var orderId = $('#orderId').val();
@@ -45,11 +45,6 @@ function generateCurrentDate(){
     $("#orderDate").val(new Date().toISOString().slice(0, 10));
 }
 
-//  function generateOrderId() {
-//         const orderId = `ORD-${orderIdCounter.toString().padStart(4, '0')}`;
-//         orderIdCounter++;
-//         return orderId;
-//     }
 function loadAllCustomerId() {
     $('#cusIdOption').empty();
     for (let customerArElement of customer) {
@@ -170,4 +165,21 @@ $("#orderQty").on('keyup', () => {
     }else {
         errorMessageQty.hide();
     }
-})
+});
+
+$('#txtCash').on('keyup',() => {
+   let cashVal =parseInt( $('#txtCash').val());
+   let subTotal =parseInt( $('#subTotal').val());
+   var cashError=$('#cashError');
+    // $('##total').val(subTotal-discount);
+    $('#txtBalance').val(subTotal-cashVal
+        
+    );
+
+   if (cashVal<subTotal){
+       cashError.show();
+   }else {
+       cashError.hide();
+   }
+
+});

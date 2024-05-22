@@ -134,8 +134,10 @@ a{
    
 
 }
-
-.errorMessageId, .errorMessageName, .errorMessageAddress, .errorMessageSalary,.errorMessageItemId,.errorMessageItemName,.errorMessageItemPrice,.errorMessageItemQty,.errorOrderQty,.errorQty{
+#addcustomer{
+    background-color:#0b7f41 !important;
+}
+.errorMessageId, .errorMessageName, .errorMessageAddress, .errorMessageSalary,.errorMessageItemId,.errorMessageItemName,.errorMessageItemPrice,.errorMessageItemQty,.errorOrderQty,.errorQty,#cashError,#DiscountError{
     color: red;
     display: none;
 }

@@ -20,7 +20,7 @@ function loadTable(){
 
 $(".save_btn").on('click', () => {
 
-    let alertConfrim = confirm('Do you really want to add this customer');
+    let alertConfrim = confirm('Do you want to add this customer ??');
     if (alertConfrim==true) {
 
         var customerID = $('#customerID').val();
