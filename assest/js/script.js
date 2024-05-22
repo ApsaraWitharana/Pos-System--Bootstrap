@@ -71,7 +71,7 @@ function checkNameField() {
 
 function checkFieldAddress() {
     var cusAddress = $('#customerAddress').val();
-    var cusAddressPattern = /^.{7,}$/;
+    var cusAddressPattern = /^.{5,}$/;
     var errorMessageAddress = $('.errorMessageAddress');
 
     if (!cusAddressPattern.test(cusAddress)) {
