@@ -6,7 +6,7 @@ export var customer=[{
 },
 {
     id : "C00-002",
-    name:"Duvindu Thathsara",
+    name:"Savindu",
     address:"Galle",
     salary:20000.00,
 }
@@ -19,6 +19,7 @@ export var items=[{
     qty:10
 
 },
+
 {
     id:"I00-002",
     name: "Keerisamba",
