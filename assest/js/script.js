@@ -34,13 +34,9 @@ $('#customer-btn').on('click', () =>{
 });
 
 /*validate field*/
-$(document).on('keydown', function(event) {
-    if (event.keyCode == 9) {
-        event.preventDefault();
-    }
-});
 
-function checkIdField(){
+
+$('#customerID').on('keyup', function(event) {
     var cusid = $('#customerID').val();
     var cusidPattern = /^C\d{2}-\d{3}$/;
     var errorMessage = $('.errorMessageId');
@@ -51,9 +47,9 @@ function checkIdField(){
     } else {
         errorMessage.hide();
         $('#customerID').css({'border': '2px solid green'});
+        $('#customerName').focus();
     }
-
-}
+});
 
 function checkNameField() {
     var cusName = $('#customerName').val();
@@ -66,6 +62,7 @@ function checkNameField() {
     } else {
         errorMessageName.hide();
         $('#customerName').css({'border': '2px solid green'});
+        $('#customerAddress').focus();
     }
 }
 
@@ -80,7 +77,9 @@ function checkFieldAddress() {
     } else {
         errorMessageAddress.hide();
         $('#customerAddress').css('border', '2px solid green');
+        $('#customerSalary').focus();
     }
+
 }
 
 function checkFieldSalary() {
@@ -108,6 +107,7 @@ function checkFieldItemId() {
     } else {
         errorMessageItemId.hide();
         $('#IID').css('border', '2px solid green');
+        $('#IName').focus();
     }
 }
 
@@ -122,6 +122,7 @@ function checkFieldItemName() {
     } else {
         errorMessageItemName.hide();
         $('#IName').css('border', '2px solid green');
+        $('#IPrice').focus();
     }
 }
 
@@ -136,6 +137,7 @@ function checkFieldItemPrice() {
     } else {
         errorMessageItemPrice.hide();
         $('#IPrice').css('border', '2px solid green');
+        $('#Iquentity').focus();
     }
 }
 
@@ -152,7 +154,3 @@ function checkFieldItemQty() {
         $('#Iquentity').css('border', '2px solid green');
     }
 }
-
-
-// ==============================barchat=========================
-

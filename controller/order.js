@@ -70,6 +70,7 @@ $('#cusIdOption').on('change', function(){
             $('#orderCusName').val(customerArElement.name);
             $('#orderCusSalary').val(customerArElement.salary);
             $('#orderCusAddress').val(customerArElement.address);
+             $('#itemIdOption').focus();
         }
     }
 });
@@ -85,6 +86,7 @@ $('#itemIdOption').on('change', function(){
              $('#orderFormItemName').val(itemName);
              $('#orderFormPrice').val(itemPrice);
              $('#orderFormQtyOnHand').val(itemQty);
+              $('#orderQty').focus();
         }
     }
 });
