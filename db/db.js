@@ -9,6 +9,13 @@ export var customer=[{
     name:"Savindu",
     address:"Galle",
     salary:20000.00,
+},
+
+{
+    id : "C00-003",
+    name:"Dilshani",
+    address:"Kandy",
+    salary:25000.00,
 }
     
 ];
