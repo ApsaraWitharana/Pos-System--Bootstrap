@@ -37,6 +37,8 @@ $("#btnPurchase").on('click', () => {
         orderDetails.push(orderDetailObj);
     }
 
+    // blindOrderRowClickEvent();
+    //  clearOrderTexts();
     console.log(customer);
 
 });
@@ -123,6 +125,75 @@ $("#btn_addItem").on('click', () => {
     loadAllItemsId();
 
 });
+
+/*discount*/
+let disTOGave=0;
+$('#discount').on('keyup',function (){
+    let dis=$('#discount').val();
+    let tot=$('#total').val();
+    var totMin=0;
+    let subTot=0;
+
+    console.log(dis+"=="+tot);
+    totMin=parseFloat(tot)*(dis/100);
+    console.log("dis Dis: "+totMin)
+
+    subTot=tot-totMin;
+    disTOGave=totMin;
+
+    $('#subTotal').val(subTot);
+})
+
+/*Cash*/
+$('#cash').on('keyup',function (){
+    let cash=$('#cash').val();
+    let subT=$('#subTotal').val();
+
+    $('#balance').val((parseFloat(cash))-parseFloat(subT));
+})
+
+// /*Purchase Order*/
+// $('#purchaseOrder').click(function (){
+//     let orderId = $('#orderId').val();
+//     let orderDate = $('#OrderDate').val();
+//     let customerName = $('#customerNameOrd').val();
+//     let discount = disTOGave;
+//     let subTotal = $('#subTotal').val();
+
+//     /*orderModal(orderId,orderDate,customerName,discount,subTotal);*/
+
+//     let orderObj = new OrderModel(orderId,orderDate,customerName,discount,subTotal);
+//     orders.push(orderObj);
+
+//     loadAllOrder();
+//     blindOrderRowClickEvent();
+//     clearOrderTexts();
+
+//     for (var tempOrder of tempOrderCartAr){
+//         tempOrderCartAr.pop();
+//     }
+//     tempOrderCartAr.pop();
+//     addCartData();
+// });
+
+
+// function clearOrderTexts(){
+//     $('#orderId').val("");
+//     $('#OrderDate').val("");
+//     $('#customerNameOrd').val("");
+//     $('#salaryOrd').val("");
+//     $('#addressOrd').val("");
+
+//     $('#item').val("");
+//     $('#priceOrd').val("");
+//     $('#qtyOnHandOrd').val(0);
+//     $('#orderQty').val("");
+
+//     $('#cash').val("");
+//     $('#discount').val(0);
+//     $('#balance').val("");
+//     $('#subTotal').val(0);
+// }
 
 function updateQty(){
     var orderFormQtyOnHand=$('#orderFormQtyOnHand').val();

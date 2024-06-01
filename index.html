@@ -233,7 +233,7 @@
                                 style="font-size: 25px ; width: 100px; border: none" disabled>
                         </div>
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-md-6 fw-bold mt-2">
                                 <label class="form-label" for="orderFormItemName">Cash :</label>
                                 <input class="form-control" id="txtCash" placeholder="5000">
@@ -242,11 +242,25 @@
 
                             <div class="col-md-6 fw-bold mt-2">
                                 <label class="form-label" for="orderFormItemName">Discount :</label>
-                                <input class="form-control" id="txtDiscount" placeholder="00">
+                                <input class="form-control" id="txtDiscount" placeholder="00.00" disabled>
+                            </div>     
+                        </div> -->
+                        <div class="row gx-3 mt-4">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="cash" class="form-label">Cash</label>
+                                    <input type="text" class="form-control" id="cash" placeholder="0000.00">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 mb-xxl-4">
+                                    <label for="discount" class="form-label">Discount</label>
+                                    <input type="number" class="form-control" id="discount" placeholder="10%">
+                                </div>
                             </div>
                         </div>
 
-                        <div class="row ">
+                        <!-- <div class="row ">
                             <div class="col-md-13 fw-bold mt-2">
                                 <label class="form-label" for="orderFormItemName">Balance :</label>
                                 <input class="form-control" id="txtBalance" placeholder="0000.00" disabled>
@@ -257,7 +271,19 @@
                                     id="btnPurchase" type="button">Purchase
                                 </button>
                             </div>
+                        </div> -->
+
+                        <div class="row">
+                            <div class="mb-3 mb-xl-5 mb-xxl-4">
+                                <label for="balance" class="form-label">Balance</label>
+                                <input type="text" class="form-control" id="balance" placeholder="0000.00">
+                            </div>
+                            <div class="text-center mt-md-4">
+                                <button class="btn btn-primary p-2 px-5 text-light bg-opacity-50 fw-bold" id="btnPurchase" type="button">Purchase
+                                </button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
