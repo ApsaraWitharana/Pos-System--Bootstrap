@@ -58,7 +58,7 @@ $("#customerTable").on('click', 'tr', function() {
     $("#customerSalary").val(salary);
 });
 $("#customerTable").on('dblclick','tr',function() {
-    let alertConfrimDelete = confirm('Do you want to delete this customer');
+    let alertConfrimDelete = confirm('Do you want to delete this customer??');
     if (alertConfrimDelete==true) {
         let index = $(this).index();
         recordIndex = index;
@@ -117,16 +117,4 @@ function loadAllCustomerId() {
     }
 }
 
-// export var loadTable=[{
-//      id : "C00-001",
-//     name:"Sachini Apsara",
-//     address:"Matara",
-//     salary:10000.00,
-// },
-// {
-//     id : "C00-002",
-//     name:"Duvindu Thathsara",
-//     address:"Galle",
-//     salary:20000.00,
-// }
-// ]
+
