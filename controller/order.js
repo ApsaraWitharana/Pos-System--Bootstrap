@@ -18,7 +18,7 @@ var allTotal=0;
 
 $("#btnPurchase").on('click', () => {
 
-    let alertConfrim = confirm('Do you really want to Purchase this item');
+    let alertConfrim = confirm('Do you want to Purchase this item ?');
     if (alertConfrim==true) {
 
         var orderId = $('#orderId').val();
@@ -177,6 +177,7 @@ function clearField(){
     $('#total').val(0);
     $('#subTotal').val(0);
 
+    // clear table details
     $('#orderCart').val("");
     
 }
