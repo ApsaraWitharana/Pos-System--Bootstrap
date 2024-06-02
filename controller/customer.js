@@ -109,7 +109,7 @@ $(".update_btn").on('click', () => {
     loadTable();
     clearField();
 });
-
+q
 function loadAllCustomerId() {
     $('#cusIdOption').empty();
     for (let customerArElement of customer) {

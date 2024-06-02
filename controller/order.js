@@ -40,6 +40,7 @@ $("#btnPurchase").on('click', () => {
     // blindOrderRowClickEvent();
     //  clearOrderTexts();
     console.log(customer);
+    clearField();
 
 });
 
@@ -151,6 +152,34 @@ $('#cash').on('keyup',function (){
 
     $('#balance').val((parseFloat(cash))-parseFloat(subT));
 })
+
+function clearField(){
+
+    // clear order details
+    $('#orderId').val("ORD002");
+    $('#OrderDate').val("");
+    $("#cusIdOption").val('C00-001');
+    $("#orderCusName").val('');
+    $("#orderCusAddress").val('');
+    $("#orderCusSalary").val('');
+
+  // clear item details
+    $('#itemIdOption').val("I00-001");
+    $('#orderFormItemName').val("");
+    $('#orderFormQtyOnHand').val(0);
+    $('#orderFormPrice').val("");
+     $('#orderQty').val("");
+
+    // clear payment details
+    $('#cash').val("");
+    $('#discount').val(0);
+    $('#balance').val("");
+    $('#total').val(0);
+    $('#subTotal').val(0);
+
+    $('#orderCart').val("");
+    
+}
 
 // /*Purchase Order*/
 // $('#purchaseOrder').click(function (){
