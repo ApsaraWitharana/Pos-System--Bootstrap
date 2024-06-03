@@ -117,4 +117,54 @@ function loadAllCustomerId() {
     }
 }
 
+$("#searchb").on('click', () => {
+    alert("Customer search successfuly!!!")
+    var customerID = $('#customerID').val();
+    var customerName = $('#customerName').val();
+    var customerAddress = $('#customerAddress').val();
+    var customerSalary = $('#customerSalary').val();
+
+    // let customerUpdateObj = customer[recordIndex];
+    // customerUpdateObj.id=customerID;
+    // customerUpdateObj.name=customerName;
+    // customerUpdateObj.address=customerAddress;
+    // customerUpdateObj.salary=customerSalary
+
+    loadAllCustomerId();
+    // loadTable();
+    // clearField();
+
+});
+
+
+
+/*Search Customer*/
+// $('#btnSearchButton').click(function () {
+
+//     for (let customerKey of customerAr) {
+
+//         //check the ComboBox Id Equal
+//         console.log($('#cusCombo').val());
+
+//         if($('#cusCombo').val()==="ID"){
+//             //check Id
+//             // alert(customerKey.id+"=="+$('#inputCusSearch').val());
+
+//             if(customerKey.customerID===$('#inputCusSearch').val()){
+//                 $('#customerID').val(customerKey.customerID);
+//                 $('#customerName').val(customerKey.customerName);
+//                 $('#customerSalary').val(customerKey.customerSalary);
+//                 $('#customerAddress').val(customerKey.customerAddress);
+//             }
+//         }else if($('#cusCombo').val()==="1"){
+//             //check Name
+//             if(customerKey.customerName===$('#inputCusSearch').val()){
+//                 $('#customerID').val(customerKey.customerID);
+//                 $('#customerName').val(customerKey.customerName);
+//                 $('#customerSalary').val(customerKey.customerSalary);
+//                 $('#customerAddress').val(customerKey.customerAddress);
+//             }
+//         }
+//     }
+// });
 
