@@ -12,7 +12,7 @@ Item Form
 
 Customer Form
 
-![Screenshot 2024-06-02 225315](https://github.com/ApsaraWitharana/Pos-System--Bootstrap/assets/139870615/11236f44-88dd-4dca-82f6-ed25ec3334dc)
+![Screenshot 2024-06-03 151556](https://github.com/ApsaraWitharana/Pos-System--Bootstrap/assets/139870615/1f06dffa-b348-452e-9733-36a0f49f45e1)
 
 Order Form
 
