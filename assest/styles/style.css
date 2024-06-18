@@ -15,6 +15,15 @@
 body{
     background-color: #E9ECEE;
     /* background-color: black; */
+    background-image: url('/assest/image/abstract-blue-black-colorful-geometric-light-triangle-line-shape-with-futuristic-concept-presentation-background_181182-34640.png');
+    background-size: cover;
+        /* Make the background image cover the entire page */
+        background-repeat: no-repeat;
+        /* Prevent the background image from repeating */
+        background-position: center;
+        /* Center the background image */
+        height: 100vh;
+    
 }
 .navbar-brand {
     font-weight: bold;

@@ -141,6 +141,21 @@ function checkFieldItemPrice() {
     }
 }
 
+function checkFieldItemSubTotal() {
+    var itemPrice = $('#IPrice').val();
+    var ItemPricePattern  = /^(?:\d+|\d+\.\d{2})$/;
+    var errorMessageItemPrice = $('.errorMessageItemPrice');
+
+    if (!ItemPricePattern.test(itemPrice)) {
+        errorMessageItemPrice.show();
+        $('#IPrice').css('border', '2px solid red');
+    } else {
+        errorMessageItemPrice.hide();
+        $('#IPrice').css('border', '2px solid green');
+        $('#Iquentity').focus();
+    }
+}
+
 function checkFieldItemQty() {
     var itemQty = $('#Iquentity').val();
     var itemQtyPattern = /^\d+$/;
